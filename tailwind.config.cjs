@@ -7,8 +7,11 @@ module.exports = {
 	theme: {
 		extend: {
 		colors:{
-			primary:colors.green[400]
-		}	
+			primary:colors.blue[400]
+		}	,fontFamily:{
+			roboto:['Roboto',"sans-serif"]
+			,poppins:['Poppins','sans-serif']
+		}
 		},
 	},
 	plugins: [typography()],

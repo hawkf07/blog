@@ -7,11 +7,11 @@ const post = Astro.props;
 ---
 
 <div
-  class="prose prose-sm w-full p-3 border rounded-md prose-h3:text-primary prose-a:text-blue-400"
+  class="prose md:prose-md lg:prose-lg sm:prose-sm w-full p-3 border rounded-md prose-h3:text-primary prose-a:text-blue-700"
 >
   {" "}
   <header>
-    <h3 class="not-prose"> <a href={`/${post.collection}/${post.slug}`}> {post.data.title}</a></h3>
+    <h3 class="not-prose text-blue-400"> <a href={`/${post.collection}/${post.slug}`}> {post.data.title}</a></h3>
     <p>Posted At<FormattedDate date={post.data.pubDate} />
       </p>
   </header>

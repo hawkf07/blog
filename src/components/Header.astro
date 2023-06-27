@@ -3,12 +3,19 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
+<header class="p-5 w-full ">
+<nav class="flex items-center justify-center">
+	<ul  class="flex justify-around w-full">
 <header>
 	<h2>
-		{SITE_TITLE}
+		<a href="/">Home</a>
 	</h2>
-	<nav>
+</header>
 
+<li>
+<a href="/blog">blog</a>
+</li>
+	</ul>
 	</nav>
 </header>
 

@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"blog">;
+const post = Astro.props;
+---
+
+<div class="prose prose-sm w-full border p-5 rounded-md prose-h3:text-primary prose-a:text-blue-400">
+  {" "}
+  <h3>{post.data.title}</h3>
+  <p>{post.data.description}</p>
+  <a href={`/${post.collection}/` + post.slug}>Read More</a>
+  <p>{post.data.pubDate}</p>
+</div>

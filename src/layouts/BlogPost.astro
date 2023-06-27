@@ -10,19 +10,24 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
+
 <html lang="en">
+	<style>
+		body {
+			@apply flex justify-center flex-col items-center
+		}
+	</style>
 	<head>
 		<BaseHead title={title} description={description} />
-		
 	</head>
-
-	<body>
+	<body >
 		<Header />
 		<main>
-			<article>
+			<article class="prose">
 				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
 				<h1 class="title">{title}</h1>
 				<FormattedDate date={pubDate} />
+				
 				{
 					updatedDate && (
 						<div class="last-updated-on">

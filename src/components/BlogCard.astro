@@ -1,14 +1,22 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import FormattedDate from "./FormattedDate.astro";
 
 type Props = CollectionEntry<"blog">;
 const post = Astro.props;
 ---
 
-<div class="prose prose-sm w-full border p-5 rounded-md prose-h3:text-primary prose-a:text-blue-400">
+<div
+  class="prose prose-sm w-full p-3 border rounded-md prose-h3:text-primary prose-a:text-blue-400"
+>
   {" "}
-  <h3>{post.data.title}</h3>
-  <p>{post.data.description}</p>
-  <a href={`/${post.collection}/` + post.slug}>Read More</a>
-  <p>{post.data.pubDate}</p>
+  <header>
+    <h3 class="not-prose"> <a href={`/${post.collection}/${post.slug}`}> {post.data.title}</a></h3>
+    <p>Posted At<FormattedDate date={post.data.pubDate} />
+      </p>
+  </header>
+  <div>
+    <p>{post.data.description}</p>
+    <a href={`/${post.collection}/` + post.slug}>Read More</a>
+  </div>
 </div>

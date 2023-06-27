@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { CollectionEntry, getCollection } from "astro:content";
 import BlogCard from "../components/BlogCard.astro";
+import Hero from "../components/Hero.astro";
 
 const posts = (await getCollection("blog")).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -17,15 +18,10 @@ const posts = (await getCollection("blog")).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header title={SITE_TITLE} />
-		<main class="prose lg:prose-lg sm:prose-sm prose-neutral prose-h1:text-gray-800 prose-h2:text-gray-600">
 
-			<section class="flex flex-col gap-2">
-				<header>
-					<h2>
-						Recent Blog Posts
-					</h2>
-				</header>
+		<main class="">
+			<Hero/>			
+			<section class="prose prose-h2:my-3 lg:prose-lg sm:prose-sm prose-neutral prose-h1:text-gray-800 prose-h2:text-red-400 flex flex-col gap-2">
 				{
 					posts.map((post) => (
 					<BlogCard {...post} />	

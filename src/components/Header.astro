@@ -1,21 +1,21 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+import { Icon } from "astro-icon";
 ---
 
-<header class="p-5 w-full ">
-<nav class="flex items-center justify-center">
-	<ul  class="flex justify-around w-full">
-<header>
-	<h2>
-		<a href="/">Home</a>
-	</h2>
-</header>
-
-<li>
-<a href="/blog">blog</a>
-</li>
-	</ul>
+<header class="p-2 flex items-center container">
+	<nav class="w-full">
+		<ul class="flex text-gray-300 dark:text-gray-600 gap-1 justify-between">
+			<li class="flex gap-1 items-center ">
+				<Icon name="fa:arrow-left" class="w-4" />
+				<h2>
+					<a href="/">Home</a>
+				</h2>
+			</li>
+			<li>
+				<Icon name="ph:moon-duotone"  class="w-8"/>
+			</li>
+		</ul>
 	</nav>
 </header>
-

@@ -9,5 +9,6 @@
 @tailwind components;
 
 body {
-  @apply text-gray-700 font-roboto bg-gray-100  flex flex-col justify-center items-center ;
+  @apply dark:bg-gray-800 dark:text-gray-200 text-gray-700 font-roboto bg-gray-100  flex flex-col justify-center items-center ;
 }
+

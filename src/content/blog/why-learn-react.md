@@ -1,6 +1,6 @@
 ---
 title: "Why Learn React"
-description: "My experince learning react"
+description: "My experience learning react"
 pubDate: Thu Jun 29 2023 04:17:25 GMT+0700 (Western Indonesia Time)
 ---
 

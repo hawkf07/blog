@@ -19,9 +19,9 @@ const posts = (await getCollection("blog")).sort(
 	</head>
 	<body>
 
-		<main> 
+		<main class="w-full items-center flex justify-center flex-col"> 
 			<Hero/>			
-			<section class="prose prose-h2:my-3 lg:prose-lg sm:prose-sm prose-neutral prose-h1:text-gray-800 prose-h2:text-red-400 flex flex-col gap-2">
+			<section class="prose container w-full prose-h2:my-3 lg:prose-lg sm:prose-sm prose-neutral prose-h1:text-gray-800 prose-h2:text-red-400 flex flex-col gap-2">
 				{
 					posts.map((post) => (
 					<BlogCard {...post} />	

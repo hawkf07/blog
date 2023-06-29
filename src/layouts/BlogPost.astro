@@ -17,9 +17,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<body class="flex items-center justify-center flex-col ">
 		<main>
 			<Header />
-			<article class="prose dark:prose-invert prose-h1:text-blue-400 prose-h2:text-green-400 prose-h3:text-yellow-400 prose-h4:text-red-400 prose-h5:text-purple-400">
+			<article class="prose dark:prose-invert prose-h1:capitalize prose-h2:capitalize prose-h1:text-blue-400 prose-h2:text-green-400 prose-h3:text-yellow-400 prose-h4:text-red-400 prose-h5:text-purple-400">
 				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-				<h1 class="title">{title}</h1>
 				<FormattedDate date={pubDate} />
 				{
 					updatedDate && (

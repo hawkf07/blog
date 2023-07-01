@@ -13,9 +13,17 @@ import { Icon } from "astro-icon";
 					<a href="/">Home</a>
 				</h2>
 			</li>
-			<li>
+			<li id="theme-toggler">
 				<Icon name="ph:moon-duotone"  class="w-8"/>
 			</li>
 		</ul>
 	</nav>
 </header>
+
+<script>
+const button = document.getElementById("theme-toggler")
+const root = document.querySelector('html')
+button?.addEventListener('click', () => {
+root?.classList.toggle('dark')
+})
+	</script>

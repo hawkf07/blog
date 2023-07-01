@@ -11,4 +11,7 @@ Tetapi program zellij memiliki beberapa _built in_ feature, dan bisa di atur ses
 berdasarkan pengalaman pribadi memakai program zellij, menurut saya lebih mudah daripada tmux karena fitur _built in_ nya keyboard _shortcut_ nya hampir sama dengan yang dipakai oleh tmux.
 kalau ingin mengubah config nya juga mudah, tinggal jalankan
 
-> mkdir ~/.config/zellij # membuat folder zellij jika belum ada && zellij setup --dump-config > ~/.config/zellij/config.kdl # membuat config
+```bash
+mkdir ~/.config/zellij # membuat folder zellij jika belum ada
+zellij setup --dump-config > ~/.config/zellij/config.kdl # membuat config
+```

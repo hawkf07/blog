@@ -2,6 +2,7 @@
 title: "Why Learn React"
 description: "My experience learning react"
 pubDate: Thu Jun 29 2023 04:17:25 GMT+0700 (Western Indonesia Time)
+lang: english
 ---
 
 after learning the basic of HTML, CSS, and Javascript you also need to step up to learn another libraries or framework.One of the best library that really good to learn as beginner, is React.So why do i need to learn React?.

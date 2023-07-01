@@ -3,6 +3,7 @@ tags: budaya,sunda,paribasa
 title: Babasan jeung paribasa ajip rosidi
 description: ajip rosidi ngeunaan paribasa jeung babasan basa sunda
 pubDate: Thu Jun 29 2023 15:06:43 GMT+0700 (Western Indonesia Time)
+lang: Basa Sunda
 ---
 
 ## Rangkuman panganteur ajip rosidi

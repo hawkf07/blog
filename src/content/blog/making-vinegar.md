@@ -1,10 +1,10 @@
---
+---
 tags:cooking ,fermentation
 title: Making Vinegar
 description: making vinegar with fruits peel
-pubDate: "Tue Aug 29 2023 15:39:34 GMT+0700 (Western Indonesia Time)"
+pubDate: Tue Aug 29 2023 15:39:34 GMT+0700 (Western Indonesia Time)
 lang: English
---
+---
 
 # This is what i learned after making homemade vinegar
 
